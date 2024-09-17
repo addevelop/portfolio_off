@@ -17,17 +17,152 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: grey;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.bg-profil
+{
+  background-image: linear-gradient(to bottom, black, transparent);
+}
+
+.bg-greyice
+{
+  background-color: #A8A8A8;
+}
+
+.w-fit
+{
+  width: fit-content;
+}
+
+.text-shadow
+{
+  text-shadow: 3px 3px 7px black;
+}
+
+.page
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-page
+{
+  background-color: grey;
+}
+
+.shadow-b, .shadow-t
+{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 1000;
+}
+
+.shadow-t
+{
+    top: 0;
+    background-image: linear-gradient(to bottom, black, transparent);
+}
+
+.shadow-b
+{
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+
+.animation-fade
+{
+  animation: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 100%;
+  }
+}
+
+::-webkit-scrollbar
+{
+  position: relative;
+  background-color: grey;
+  width: 10px;
+  z-index: 10010;
+
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: rgb(82, 82, 82);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+    z-index: 10010;
+
+}
+
+.head
+{
+  z-index: 2000;
+  height: 6vh;
+}
+
+.shadow-inner-arc-circle
+{
+  box-shadow: inset 0px -3px 3px black;
+}
+
+.flag
+{
+  width: 20px;
+}
+
+.bg-moi
+{
+  background-image: linear-gradient(to bottom, rgb(104, 104, 104), rgb(83, 83, 83));
+}
+
+.box-shadow-1
+{
+  box-shadow: 0px 7px 10px black;
+}
+
+.box-shadow
+{
+  box-shadow: 0px 0px 10px black;
+}
+
+.logo-photo
+{
+  animation: 3s logo infinite alternate;
+}
+.logo-photo:hover
+{
+  opacity: 0.6;
+}
+
+@keyframes logo
+{
+  0%
+  {
+    opacity: 0.1;
+  }
+  100%
+  {
+    opacity: 0.2;
   }
 }
