@@ -5,7 +5,6 @@ import Moi from "@/app/components/moi";
 import React, { useState, useRef } from 'react'
 import { useDebouncedCallback } from "use-debounce";
 import OutilPosition from "@/outils/OutilPosition";
-import Navbar from "@/app/components/navbar";
 import Profesional from "@/app/components/profesional"
 import Languages from "./components/languages";
 import Background from "./background";
@@ -25,7 +24,6 @@ const [scrollPage, setScrollPage] = useState(false);
   return (
     <div  ref={mainRef} className="snap-y overflow-y-auto">
       <Background />
-      <Navbar />
           <div className={`shadow-t ${scrollPage ? '' : 'hidden'} animation-fade`}></div>
       <Profil />
       <Moi />

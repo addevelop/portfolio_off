@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../css/experience.css";
-
+import Image from 'next/image';
 interface IExperience
 {
     title: string;
@@ -17,8 +17,8 @@ function Experience(props: IExperience) {
          </legend>
             <div className="grid grid-cols-4 w-full gap-4 p-3">
               {props.img.map((value, index) => (
-                <div className="h-full w-full bg-gray-700 p-3 rounded-full flex align-center justify-center">
-                  <img className="h-auto w-full m-auto" src={value} />
+                <div key={index} className="h-full w-full bg-gray-700 p-3 rounded-full flex align-center justify-center">
+                  <Image className="h-auto w-full m-auto" alt={value} src={value} />
                 </div>
               ))}
             </div>
