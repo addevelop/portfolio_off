@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import React, { useState, useRef} from 'react'
-import OutilPosition from "@/outils/OutilPosition";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

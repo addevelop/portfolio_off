@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonMenu from '@/ui/buttons/buttonMenu'
+import ButtonMenu from '@/components/buttons/buttonMenu'
 import IButtonMenu from '@/ui/interfaces/IButtonMenu'
 function buttonContainer(props: any) {
   return (

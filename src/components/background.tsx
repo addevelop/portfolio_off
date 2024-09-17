@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react'
 import ScrollReveal from 'scrollreveal'
-import "./css/background.css";
+import "@/styles/background.css";
 function Background() {
   return (
     <div className="area" >

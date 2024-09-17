@@ -1,10 +1,10 @@
 'use client';
 import React, { useEffect } from 'react'
-import Experience from '@/app/components/experience/experience'
+import Experience from '@/components/experience/experience'
 import { Carousel } from 'react-responsive-carousel';
 import ScrollReveal from 'scrollreveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import "@/app/caroucel.css";
+import "@/styles/caroucel.css";
 
 function Profesional() {
   const img: any = ["/languages/html.png", "/languages/css.png", , "/languages/javascript.png", "/languages/php.png", "/languages/sql.png", "/languages/figma.png"];

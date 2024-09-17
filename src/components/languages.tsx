@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import ScrollReveal from 'scrollreveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import "@/app/caroucel.css";
+import "@/styles/caroucel.css";
 import Language from './language/language';
 function Languages() {
   const img: any = ["/languages/1.png", "/languages/2.png"];
