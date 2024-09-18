@@ -2,21 +2,15 @@ import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "@/styles/caroucel.css";
 import Language from './language/language';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
 function Languages() {
   const img: any = ["/languages/1.png", "/languages/2.png"];
   const img2: any = ["/languages/2.png", "/languages/3.png", "/languages/4.png"];
   const img3: any = ["/languages/1.png", "/languages/2.png"];
   
-  useScrollReveal('.languages', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 2000,
-    delay: 200,
-  })
+  
   return (
     <div className=" languages page snap-center flex justify-center items-center">
-      <div className="w-screen grid max-sm:grid-cols-3 grid-cols-4 p-7 h-3/4">
+      <div className="w-screen grid max-sm:grid-cols-3 grid-cols-4 p-7">
         <Language img="/languages/html.png" title="HTML"/>
         <Language img="/languages/css.png" title="CSS"/>
         <Language img="/languages/javascript.png" title="JS"/>

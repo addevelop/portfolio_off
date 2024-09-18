@@ -13,7 +13,7 @@ const [scrollPage, setScrollPage] = useState(false);
 
   
   return (
-    <div  ref={mainRef} className="snap-y overflow-y-auto">
+    <div  ref={mainRef} className="background-page snap-y overflow-y-auto">
       <Background />
           <div className={`shadow-t ${scrollPage ? '' : 'hidden'} animation-fade`}></div>
       <Profil />
