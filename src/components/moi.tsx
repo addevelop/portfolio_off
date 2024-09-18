@@ -1,31 +1,25 @@
-'use client';
-import React, { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal'
+import React from 'react'
 import { FaCar, FaGamepad, FaMotorcycle } from 'react-icons/fa'
 import { FR, US, ES, PT } from 'country-flag-icons/react/3x2'
 import Item from '@/components/Item/Item';
 import { FaComputer } from 'react-icons/fa6';
 import Image from 'next/image';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 function Moi() {
-    useEffect(() => {
-        ScrollReveal().reveal(".moi", {
-            origin: 'left',
-            distance: '200%',
-            duration: 2000,
-            delay: 100,
-            reset: false,
-            mobile: true
-        })
 
-        ScrollReveal().reveal(".moi1", {
-            origin: 'right',
-            distance: '200%',
-            duration: 2000,
-            delay: 100,
-            reset: false,
-            mobile: true
-        })
-    }, [])
+    useScrollReveal('.moi', {
+        origin: 'left',
+        distance: '200%',
+        duration: 2000,
+        delay: 100,
+      });
+    
+    useScrollReveal('.moi1', {
+    origin: 'right',
+        distance: '200%',
+        duration: 2000,
+        delay: 100,
+    });
   return (
     <>
     <div id="moi" className="page snap-center flex justify-center items-center text-white">

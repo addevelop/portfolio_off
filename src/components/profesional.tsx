@@ -1,8 +1,7 @@
-'use client';
 import React, { useEffect } from 'react'
 import Experience from '@/components/experience/experience'
 import { Carousel } from 'react-responsive-carousel';
-import ScrollReveal from 'scrollreveal'
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "@/styles/caroucel.css";
 
@@ -10,16 +9,14 @@ function Profesional() {
   const img: any = ["/languages/html.png", "/languages/css.png", , "/languages/javascript.png", "/languages/php.png", "/languages/sql.png", "/languages/figma.png"];
   const img2: any = ["/languages/html.png", "/languages/css.png", "/languages/javascript.png", "/languages/php.png", "/languages/csharp.png", "/languages/postman.png"];
   const img3: any = ["/languages/html.png", "/languages/css.png", "/languages/javascript.png", "/languages/angular.png", "/languages/sql.png", "/languages/csharp.png", "/languages/postman.png", "/languages/jira.png"];
-  useEffect(() => {
-    ScrollReveal().reveal(".caroucelPerso", {
-        origin: 'bottom',
-        distance: '50px',
-        duration: 2000,
-        delay: 200,
-        reset: false,
-        mobile: true
-    })
-}, [])
+  
+  useScrollReveal('.caroucelPerso', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 2000,
+    delay: 200,
+  });
+
   return (
     <div id="experiences" className="page snap-center flex justify-center items-center">
       <div className="caroucelPerso w-screen">

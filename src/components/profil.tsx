@@ -1,19 +1,9 @@
-'use client';
 import React, { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal'
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import ButtonContainer from './buttonContainer';
 import Image from 'next/image';
 function Profil() {
-    useEffect(() => {
-        ScrollReveal().reveal(".profil", {
-            origin: 'bottom',
-            distance: '50px',
-            duration: 2000,
-            delay: 200,
-            reset: false,
-            mobile: true
-        })
-    }, [])
+    
   return (
     <div className="bg-profil page profil p-3">
           <div className=" relative rounded-full overflow-hidden place-items-center m-auto" style={{width: '40vw', height: '40vw'}}>

@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonMenu from '@/components/buttons/buttonMenu'
-import IButtonMenu from '@/ui/interfaces/IButtonMenu'
 function buttonContainer(props: any) {
   return (
     <div className="flex max-sm:flex-col w-fit m-auto">
