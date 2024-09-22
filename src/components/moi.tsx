@@ -10,36 +10,33 @@ function Moi() {
     useScrollReveal('.moi', {
         origin: 'left',
         distance: '200%',
-        duration: 2000,
+        duration: 1000,
         delay: 100,
       });
     
     useScrollReveal('.moi1', {
     origin: 'right',
         distance: '200%',
-        duration: 2000,
+        duration: 1000,
         delay: 100,
     });
   return (
     <>
     <div id="moi" className="page snap-center flex justify-center items-center text-white">
-         <fieldset className="bg-gray-600 box-shadow-1 w-11/12 rounded-md hover:shadow-xl moi">
-         <legend className="bg-sky-600 block w-fit p-3 m-auto rounded-md font-bold text-2xl">Moi</legend>
-            <p className="text-xl p-3 text-justify">
-                La technologie évolue rapidement, et j&apos;adore être à la pointe des dernières avancées pour rester compétitif et trouver des solutions créatives.
-                <br />
-                <br />
-                Développer est ma passion, car j&apos;aime créer quelque chose à partir de rien et voir un projet évoluer de la conception à la réalisation.
-                <br />
-                <br />
-                Ma curiosité insatiable me pousse à explorer divers domaines, à poser des questions et à rechercher des réponses pour découvrir de nouvelles perspectives.
+         <fieldset className="bg-gray-600 box-shadow-1 max-sm:w-11/12 w-6/12 rounded-md hover:shadow-xl moi">
+         <legend className="bg-sky-600 block w-fit p-3 m-auto rounded-md font-bold text-2xl">À propos de moi</legend>
+            <p className="text-l p-3 text-justify">
+            Passionné par le développement informatique, je m&apos;épanouis dans la création de solutions innovantes et la résolution de problèmes complexes.<br /><br />
+            J&apos;aime apprendre et me tenir à jour avec les dernières technologies.<br /><br />
+            Ayant un esprit analytique et créatif, je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences en programmation et en conception web.<br /><br />
+            Je suis un développeur rigoureux et attentif aux détails, capable de travailler en autonomie ou en équipe pour mener à bien des projets.
             </p>
          </fieldset>
       </div>
       <div id="competences" className=" page snap-center flex justify-center items-center text-white">
-         <fieldset className="bg-gray-600 box-shadow-1 w-11/12 rounded-md hover:shadow-xl moi1">
+         <fieldset className="bg-gray-600 box-shadow-1 max-sm:w-11/12 w-4/12 rounded-md hover:shadow-xl moi1">
          <legend className="block w-30 p-2 m-auto rounded-md font-bold text-2xl">
-            <div className="max-sm:p1 p-3 w-3/6 relative m-auto">
+            <div className="max-sm:p1 p-3 max-sm:w-3/6 w-5/12 relative m-auto">
                 <Image src="/profile.png" width={1000} height={1000} alt="image de Adrien" className="relative z-10 block w-full"/>
                 <div className="bg-page w-full bottom-0 left-0 rounded-bl-full rounded-br-full h-2/4 absolute shadow-inner-arc-circle"></div>
             </div>

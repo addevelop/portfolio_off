@@ -11,7 +11,7 @@ const ButtonMenu: React.FC<IButtonMenu> = (props) => {
   });
   
   return (
-    <div className={`rounded-full bg-gray-500 text-center mt-10 p-3 w-fit min-w-full text-shadow hover:bg-gray-800 cursor-pointer hover:shadow-black-500/50 shadow text-white text-lg ${props.appearClass}`}>
+    <div className={`rounded-full bg-gray-500 text-center mt-6 p-3 min-w-full text-shadow hover:bg-gray-800 cursor-pointer hover:shadow-black-500/50 shadow text-white text-lg ${props.appearClass}`}>
         <a href={`#${props.id}`}>{props.title}</a>
     </div>
   );

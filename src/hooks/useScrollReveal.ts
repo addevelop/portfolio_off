@@ -12,5 +12,5 @@ export const useScrollReveal = (selectors: string, options = {}) => {
           ...options, // Merge default options with any provided options
         });
       }
-    }, []);
+    }, [selectors]);
   };

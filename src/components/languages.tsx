@@ -10,7 +10,7 @@ function Languages() {
   
   return (
     <div className=" languages page snap-center flex justify-center items-center">
-      <div className="w-screen grid max-sm:grid-cols-3 grid-cols-4 p-7">
+      <div className="max-sm:w-screen w-8/12 grid max-sm:grid-cols-3 grid-cols-5 p-7">
         <Language img="/languages/html.png" title="HTML"/>
         <Language img="/languages/css.png" title="CSS"/>
         <Language img="/languages/javascript.png" title="JS"/>

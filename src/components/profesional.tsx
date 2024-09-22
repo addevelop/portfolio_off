@@ -19,7 +19,7 @@ function Profesional() {
 
   return (
     <div id="experiences" className="page snap-center flex justify-center items-center">
-      <div className="caroucelPerso w-screen">
+      <div className="caroucelPerso max-sm:w-screen w-6/12">
         <Carousel 
         showArrows={true}
         infiniteLoop={true}
@@ -27,6 +27,7 @@ function Profesional() {
         // autoPlay={true}
         // dynamicHeight={true}
         emulateTouch={true}
+        showThumbs={false}
         >
         <Experience colorTitle="bg-pink-600" title="Développeur" img={img} description={`
           Développement et maintenance d'un outil en interne, permettant la gestion du matériel informatiques.
