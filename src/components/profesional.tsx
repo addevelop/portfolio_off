@@ -18,7 +18,7 @@ function Profesional() {
   });
 
   return (
-    <div id="experiences" className="page snap-center flex justify-center items-center">
+    <div id="experiences" className="page flex justify-center items-center max-w-screen overflow-x-hidden">
       <div className="caroucelPerso max-sm:w-screen w-6/12">
         <Carousel 
         showArrows={true}

@@ -5,6 +5,7 @@ import React, { useState, useRef } from 'react'
 import Profesional from "@/components/profesional"
 import Languages from "@/components/languages";
 import Background from "@/components/background";
+import Contact from "@/components/contact";
 export default function Page() {
 const [scrollPage, setScrollPage] = useState(false);
   const [classShadow, setClassShadow] = useState("hidden");
@@ -20,6 +21,7 @@ const [scrollPage, setScrollPage] = useState(false);
       <Moi />
       <Profesional />
       <Languages />
+      <Contact />
            <div className={`shadow-b ${scrollPage ? '' : 'hidden'} animation-fade`}></div>
     </div>
   );
