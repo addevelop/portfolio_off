@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact(){
     const [state, handleSubmit] = useForm("xkgwlprw");
-    if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
-    }
+    const [isSended, setIsSended] = useState(false);
+    useEffect(() => {
+        if (state.succeeded) {
+            setIsSended(true);
+        }
+    }, [state.succeeded])
+    
     return(
         <div id="contact" className="page flex justify-center items-center min-h-screen text-white box-shadow" style={{ background: "linear-gradient(to right, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.8))" }}>
   <form onSubmit={handleSubmit} className="w-full max-w-lg bg-gray-700 p-8 rounded-lg shadow-lg">
-    <div>
+
+    {isSended ? (
+        <div className="text-center p-3 text-xl">
+            Message envoyé !
+        </div>
+    ) : (
+        <>
+            <div>
         <h2 className="text-xl">Me contacter</h2>
         <hr />
     </div>
-    <div className="mb-6 mt-6">
+        <div className="mb-6 mt-6">
       <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
         Votre adresse email
       </label>
@@ -47,6 +58,9 @@ function Contact(){
     >
       Submit
     </button>
+    </>
+    )}
+    
   </form>
 
         </div>
