@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
+import Loading from "./loading/loading";
 
 function Contact(){
     const [state, handleSubmit] = useForm("xkgwlprw");
     const [isSended, setIsSended] = useState(false);
+    const [isLoadingSended, setIsLoadingSended] = useState(true);
     useEffect(() => {
         if (state.succeeded) {
+            setIsLoadingSended(false);
             setIsSended(true);
         }
     }, [state.succeeded])
@@ -16,7 +19,13 @@ function Contact(){
 
     {isSended ? (
         <div className="text-center p-3 text-xl">
-            Message envoyé !
+            {isLoadingSended ? (
+                  <div className="w-32 h-32 m-auto">
+                    <Loading />
+                  </div>
+            ) : (
+                <p>Message envoyé !</p>
+            )}
         </div>
     ) : (
         <>
