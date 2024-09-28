@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://adrien-rodrigues.fr
+
+# Sitemaps
+Sitemap: https://adrien-rodrigues.fr/sitemap.xml

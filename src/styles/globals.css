@@ -90,6 +90,10 @@ body {
   animation-duration: 1s;
 }
 
+.trait
+{
+  animation: 0.7s fade infinite alternate;
+}
 
 @keyframes fade
 {
@@ -102,8 +106,6 @@ body {
     opacity: 100%;
   }
 }
-
-
 
 .head
 {

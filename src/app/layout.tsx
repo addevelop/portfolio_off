@@ -5,8 +5,9 @@ import React, { useState, useRef} from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrien Rodrigues",
-  description: "Portfolio Adrien Rodrigues",
+  title: "Portfolio Adrien Rodrigues - Développeur full-stack",
+  description: "Bienvenue sur le portfolio d\'Adrien Rodrigues, développeur full-stack. Découvrez ses compétences.",
+  keywords: "développeur, full-stack, portfolio, Adrien Rodrigues"
 };
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={inter.className}>
         {children}
         </body>

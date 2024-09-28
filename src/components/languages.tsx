@@ -9,7 +9,9 @@ function Languages() {
   
   
   return (
-    <div className=" languages page snap-center flex justify-center items-center">
+    <div className=" languages page snap-center flex justify-center items-center flex-col">
+                  <h2 className='text-3xl text-white box-shadow bg-blue-600 p-2 rounded-md max-sm:text-xl'>Compétences</h2>
+
       <div className="max-sm:w-screen w-8/12 grid max-sm:grid-cols-3 grid-cols-5 p-7">
         <Language img="/languages/html.png" title="HTML"/>
         <Language img="/languages/css.png" title="CSS"/>

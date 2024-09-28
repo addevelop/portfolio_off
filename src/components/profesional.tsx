@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Experience from '@/components/experience/experience'
 import { Carousel } from 'react-responsive-carousel';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
@@ -18,7 +18,9 @@ function Profesional() {
   });
 
   return (
-    <div id="experiences" className="page flex justify-center items-center max-w-screen overflow-x-hidden">
+    <div id="experiences" className="page flex flex-col justify-center items-center max-w-screen overflow-x-hidden max-sm:mt-10">
+            <h2 className='text-3xl text-white box-shadow bg-sky-700 p-2 rounded-md max-sm:text-xl'>Expériences professionnelles</h2>
+
       <div className="caroucelPerso max-sm:w-screen w-6/12">
         <Carousel 
         showArrows={true}

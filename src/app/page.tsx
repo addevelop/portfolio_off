@@ -7,18 +7,13 @@ import Languages from "@/components/languages";
 import Background from "@/components/background";
 import Contact from "@/components/contact";
 import Loading from "@/components/loading/loading";
+import Footer from "@/components/footer";
 
 export default function Page() {
-const [scrollPage, setScrollPage] = useState(false);
-  const [classShadow, setClassShadow] = useState("hidden");
   const mainRef = useRef<HTMLDivElement | null>(null);
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleLoad = () => {
-    console.log('ok');
-    setIsLoading(true);
-  }
 
   useEffect(() => {
       if(document.readyState === 'complete')
@@ -38,16 +33,15 @@ const [scrollPage, setScrollPage] = useState(false);
     <>
     {isLoading ? (
       <>
-        <div  ref={mainRef} className="background-page snap-y overflow-y-auto">
+        <main  ref={mainRef} className="background-page snap-y overflow-y-auto">
           <Background />
-              <div className={`shadow-t ${scrollPage ? '' : 'hidden'} animation-fade`}></div>
           <Profil />
           <Moi />
           <Profesional />
           <Languages />
           <Contact />
-              <div className={`shadow-b ${scrollPage ? '' : 'hidden'} animation-fade`}></div>
-        </div>
+          <Footer />
+        </main>
       </>
     ) : (
       <div className="w-full h-screen bg-black fixed">
