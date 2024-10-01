@@ -12,7 +12,7 @@ function Profil() {
         pause: 2000, 
         deleteTime: 1000, 
         transitionDelay: 500,
-        textes: ["Adrien RODRIGUES.",  "développeur full-stack."]
+        textes: ["Adrien RODRIGUES.",  "développeur web."]
       });
   }, [])
   return (

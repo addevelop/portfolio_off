@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
-import React, { useState, useRef} from 'react'
+import React from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio Adrien Rodrigues - Développeur full-stack",
-  description: "Bienvenue sur le portfolio d\'Adrien Rodrigues, développeur full-stack. Découvrez ses compétences.",
+  title: "Portfolio Adrien Rodrigues - Développeur web",
+  description: "Bienvenue sur le portfolio d\'Adrien Rodrigues, développeur web. Découvrez ses compétences.",
   keywords: "développeur, full-stack, portfolio, Adrien Rodrigues"
 };
 
