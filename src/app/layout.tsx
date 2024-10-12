@@ -5,9 +5,9 @@ import React from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio Adrien Rodrigues - Développeur web",
+  title: "Adrien Rodrigues | Portfolio - Développeur web",
   description: "Bienvenue sur le portfolio d\'Adrien Rodrigues, développeur web. Découvrez ses compétences.",
-  keywords: "développeur, full-stack, portfolio, Adrien Rodrigues"
+  keywords: "Adrien, Rodrigues, développeur, web, portfolio"
 };
 
 export default function RootLayout({
