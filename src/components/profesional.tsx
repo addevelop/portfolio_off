@@ -56,7 +56,7 @@ function Profesional() {
                 <li>Développement d'un générateur de jeu</li>
               </ul>
               `}/>
-        <Experience colorTitle="bg-teal-800	" title="Ingégnieur développeur web" img={img3} description={`
+        <Experience colorTitle="bg-teal-800	" title="Ingénieur développeur web" img={img3} description={`
         Maintenance de site commercial d'un orpérateur téléphonique.
         <br/><br/>
             <ul>
